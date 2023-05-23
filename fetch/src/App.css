@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 968px;
+    height: auto;
+    left: 236px;
+    top: 193px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+  }
+  
+  .heading {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: bold;
+    padding: 10px;
+    color: #B5B7C0;
+    position: relative;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .container:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    width: 888px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #EEEEEE;
+  }
+  
+  .container:nth-child(9n)::before {
+    display: none;
+  }
+  
